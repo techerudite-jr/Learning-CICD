@@ -9,7 +9,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test-python-3.10:
+  test_python_310:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,7 +25,7 @@ jobs:
         run: |
           python -m unittest discover
 
-  test-python-3.11:
+  test_python_311:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
