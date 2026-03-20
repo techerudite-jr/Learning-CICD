@@ -8,11 +8,12 @@ class TestApp(unittest.TestCase):
         self.assertEqual(add_numbers(-1, 1), 0)
         self.assertEqual(add_numbers(0, 0), 0)
 
-    def test_subtract_numbers(self):
-        from app import subtract_numbers
-        self.assertEqual(subtract_numbers(5, 3), 2)
-        self.assertEqual(subtract_numbers(0, 1), -1)
-        self.assertEqual(subtract_numbers(10, 5), 5)
+    def test_divide_numbers(self):
+        from app import divide_numbers
+        self.assertEqual(divide_numbers(6, 3), 2)
+        self.assertEqual(divide_numbers(10, 2), 5)
+        with self.assertRaises(ValueError):
+            divide_numbers(5, 0)
 
 if __name__ == "__main__":
     unittest.main()
