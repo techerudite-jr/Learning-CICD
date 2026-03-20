@@ -6,7 +6,7 @@ class TestApp(unittest.TestCase):
     def test_add_numbers(self):
         self.assertEqual(add_numbers(2, 3), 5)  # Simulated conflicting change in main
         self.assertEqual(add_numbers(-1, 1), 0)
-        self.assertEqual(add_numbers(0, 0), 0)
+        self.assertEqual(add_numbers(1, 1), 2)
 
     def test_divide_numbers(self):
         from app import divide_numbers
