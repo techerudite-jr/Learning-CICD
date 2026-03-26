@@ -6,6 +6,8 @@ def add_numbers(a, b):
 def divide_numbers(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
+    print("Dividing {} by {}".format(a, b))
+    hello  # Simulated conflicting change in main
     return a / b
 
 if __name__ == "__main__":
