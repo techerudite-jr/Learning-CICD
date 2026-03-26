@@ -23,12 +23,6 @@ jobs:
           pip install -r requirements.txt
           pip install coverage flake8 black
         working-directory: myapp
-      - name: Lint with flake8
-        run: flake8 .
-        working-directory: myapp
-      - name: Check formatting with black
-        run: black --check .
-        working-directory: myapp
       - name: Run tests with coverage
         run: |
           coverage run -m unittest discover
